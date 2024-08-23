@@ -75,10 +75,10 @@ margin-left: 10px;
     background: var(--ultra);
 }
 .section_about{
-    background: var(--semi);
+    background: var(--super);
 }
 .section_project{
-    background: var(--super);
+    background: var(--semi);
 }
 .section_resume{
     background: var(--light);
