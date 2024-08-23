@@ -1,0 +1,30 @@
+.home_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.home_container .profile {
+  position: relative;
+
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+}
+/* -------image-------- */
+.home_container .profile img {
+  position: absolute;
+  top: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.home_container .details {
+  background: var(--semi);
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+}

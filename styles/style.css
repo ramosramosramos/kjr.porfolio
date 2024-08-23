@@ -21,6 +21,7 @@
   width: 100%;
   background: var(--ultra);
   color: var(--light);
+  z-index: 999;
 }
 .logo a {
   padding: 0px 10px;
@@ -53,6 +54,7 @@
 .navigation_links a:hover {
     color: var(--semi); /* Hover color */
 }
+
 /* -------------------------------universal------------------------- */
 .main{
     min-height: 100vh;
