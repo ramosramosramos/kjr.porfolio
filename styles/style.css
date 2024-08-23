@@ -4,11 +4,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --ultra: #1E201E;
   --super: #3C3D37;
   --semi: #ff6347;
   --light: #ECDFCC;
+}
+a{
+  outline: none;
 }
 /* ----------------------------navigation--------------------------- */
 /* ----------------------------navigation--------------------------- */
@@ -23,8 +27,11 @@
   color: var(--light);
   z-index: 999;
 }
+.logo{
+margin-left: 10px;
+}
 .logo a {
-  padding: 0px 10px;
+  padding: px 10px;
   color: var(--light);
   text-decoration: none;
 

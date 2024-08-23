@@ -1,92 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <nav class="navigation">
-        <div class="logo">
-            <a href="index.html">kent Jerone</a>
-        </div>
-        <div class="navigation_links">
-            <a class="active links" href="#/">Home</a>
-            <a class="links" href="#about">About</a>
-            <a class="links" href="#project">Project</a>
-            <a class="links" href="#resume">Resume</a>
-        </div>
+      <div class="logo">
+        <a href="index.html"><h1>KJ</h1></a>
+      </div>
+      <div class="navigation_links">
+        <a class="active links" href="#/">Home</a>
+        <a class="links" href="#about">About</a>
+        <a class="links" href="#project">Project</a>
+        <a class="links" href="#resume">Resume</a>
+      </div>
     </nav>
-    
-    
+
     <!-- ----------------- Sections -------------------------- -->
     <!-- ----------------- Section Home -------------------------- -->
     <section id="/" class="main section_home">
-       <div class="home_container">
-            <div class="profile">
-                <img src="image/profile.jpg" alt="">
-            </div>
-            <div class="details">
+      <div class="home_container">
+        <div class="profile">
+          <img src="image/profile.jpg" alt="" />
 
+          <div>
+            <h1><strong>Kent Jerone Ramos</strong></h1>
+            <p>Aspiring to be a backend developer</p>
+            <p style="font-size: small">
+              I'm a <strong>Third Year </strong> student in
+              <strong>Acts Computer College</strong> of Santa Cruz ,Laguna
+            </p>
+            <div class="social_links">
+              <a href="#">
+                <img
+                  style="width: 35px; height: 35px"
+                  src="image/facebook.png"
+                  alt="Facebook"
+              /></a>
+              <a href="#">
+                <img
+                  style="width: 35px; height: 35px"
+                  src="image/github.png"
+                  alt="Github"
+              /></a>
+              <a href="">
+                <img
+                  style="width: 35px; height: 35px"
+                  src="image/tiktok1.png
+                    "
+                  alt="Tiktok"
+              /></a>
             </div>
-
-        
-       </div>
+          </div>
+        </div>
+        >
+      </div>
     </section>
 
-        <!-- ----------------- Section About -------------------------- -->
-        <!-- ----------------- Section About -------------------------- -->
+    <!-- ----------------- Section About -------------------------- -->
+    <!-- ----------------- Section About -------------------------- -->
     <section id="about" class="main section_about">
-        <h1>About</h1>
+      <h1>About</h1>
     </section>
-        <!-- ----------------- Section Project -------------------------- -->
-        <!-- ----------------- Section Project -------------------------- -->
+    <!-- ----------------- Section Project -------------------------- -->
+    <!-- ----------------- Section Project -------------------------- -->
     <section id="project" class="main section_project">
-        <h1>Project</h1>
+      <h1>Project</h1>
     </section>
 
-        <!-- ----------------- Section resume -------------------------- -->
-        <!-- ----------------- Section resume -------------------------- -->
-    
+    <!-- ----------------- Section resume -------------------------- -->
+    <!-- ----------------- Section resume -------------------------- -->
+
     <section id="resume" class="main section_resume">
-        <h1>Resume</h1>
+      <h1>Resume</h1>
     </section>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".navigation_links a");
 
-</body>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.navigation_links a');
+      function activateLink(link) {
+        navLinks.forEach((navLink) => navLink.classList.remove("active"));
+        link.classList.add("active");
+      }
 
-        function activateLink(link) {
-            navLinks.forEach(navLink => navLink.classList.remove('active'));
-            link.classList.add('active');
+      function handleScroll() {
+        let currentSection = sections[0]; // Default to the first section
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+            currentSection = section;
+          }
+        });
+
+        const currentLink = document.querySelector(
+          `.navigation_links a[href="#${currentSection.id}"]`
+        );
+        if (currentLink) {
+          activateLink(currentLink);
         }
+      }
 
-        function handleScroll() {
-            let currentSection = sections[0]; // Default to the first section
-
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (window.scrollY >= sectionTop - sectionHeight / 3) {
-                    currentSection = section;
-                }
-            });
-
-            const currentLink = document.querySelector(`.navigation_links a[href="#${currentSection.id}"]`);
-            if (currentLink) {
-                activateLink(currentLink);
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Run on page load to set the correct active link
+      window.addEventListener("scroll", handleScroll);
+      handleScroll(); // Run on page load to set the correct active link
     });
-</script>
+  </script>
 </html>
