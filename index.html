@@ -24,7 +24,7 @@
       </div>
       <!-- -----------------------MEnu--------------------------------
     -----------------------MEnu-------------------------------- -->
-      <button onclick="openMenu" style="all: unset; cursor: pointer;">
+      <button onclick="openMenu()" style="all: unset; cursor: pointer;">
         <span style="padding: 10px" class="material-symbols-outlined">
           menu
         </span>
@@ -42,7 +42,7 @@
 
     <!-- ----------------- Sections -------------------------- -->
     <!-- ----------------- Section Home -------------------------- -->
-    <section id="/" class="main section_home">
+    <section id="/" onclick="closeMenu()" class="main section_home">
       <div class="home_container">
         <div class="profile">
           <img src="image/profile.jpg" alt="" />
@@ -82,19 +82,19 @@
 
     <!-- ----------------- Section About -------------------------- -->
     <!-- ----------------- Section About -------------------------- -->
-    <section id="about" class="main section_about">
+    <section id="about" onclick="closeMenu()" class="main section_about">
       <h1>About</h1>
     </section>
     <!-- ----------------- Section Project -------------------------- -->
     <!-- ----------------- Section Project -------------------------- -->
-    <section id="project" class="main section_project">
+    <section id="project" onclick="closeMenu()" class="main section_project">
       <h1>Project</h1>
     </section>
 
     <!-- ----------------- Section resume -------------------------- -->
     <!-- ----------------- Section resume -------------------------- -->
 
-    <section id="resume" class="main section_resume">
+    <section id="resume" onclick="closeMenu()" class="main section_resume">
       <h1>Resume</h1>
     </section>
   </body>

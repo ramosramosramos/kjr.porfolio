@@ -28,8 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Run on page load to set the correct active link
+
+ 
+   
   });
 
+
+const navigation_links = document.querySelector('.navigation_links');
+
   function openMenu(){
-    
+    navigation_links.classList.toggle('openMenu');
   }
+  function closeMenu(){
+    navigation_links.classList.remove('openMenu');
+  }
+
+ 

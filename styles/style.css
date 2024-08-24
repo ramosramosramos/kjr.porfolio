@@ -97,18 +97,14 @@ margin-left: 10px;
 
     min-height: 100vh;
     top: 0;
-    right: 0;
+    right: -999px;
     z-index: 999;
-
+transition: all 0.4s ease-in-out;
   
   }
-  .navigation_links{
-  display: none;
 
-  
-  }
   .navigation_links ul{
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,4 +112,7 @@ margin-left: 10px;
     margin-top: 70%;
     
   }
+.openMenu{
+  right: 0;
+}
 }
