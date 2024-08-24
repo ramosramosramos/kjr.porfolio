@@ -25,7 +25,7 @@ a{
   width: 100%;
   background: var(--ultra);
   color: var(--light);
-  z-index: 999;
+  z-index: 500;
 }
 .logo{
 margin-left: 10px;
@@ -38,6 +38,12 @@ margin-left: 10px;
 }
 
 .navigation_links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  gap: 10px;
+}
+.navigation_links ul {
   display: flex;
   justify-content: center;
   width: 50%;
@@ -82,4 +88,31 @@ margin-left: 10px;
 }
 .section_resume{
     background: var(--light);
+}
+@media (max-width:700px) {
+  .navigation_links{
+    background: var(--super);
+    position: absolute;
+    display: block;
+
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 999;
+
+  
+  }
+  .navigation_links{
+  display: none;
+
+  
+  }
+  .navigation_links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70%;
+    
+  }
 }

@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -18,11 +22,21 @@
       <div class="logo">
         <a href="index.html"><h1>KJ</h1></a>
       </div>
+      <!-- -----------------------MEnu--------------------------------
+    -----------------------MEnu-------------------------------- -->
+      <button style="all: unset; cursor: pointer;">
+        <span style="padding: 10px" class="material-symbols-outlined">
+          menu
+        </span>
+      </button>
+      
       <div class="navigation_links">
-        <a class="active links" href="#/">Home</a>
-        <a class="links" href="#about">About</a>
-        <a class="links" href="#project">Project</a>
-        <a class="links" href="#resume">Resume</a>
+        <ul>
+          <a class="active links" href="#/">Home</a>
+          <a class="links" href="#about">About</a>
+          <a class="links" href="#project">Project</a>
+          <a class="links" href="#resume">Resume</a>
+        </ul>
       </div>
     </nav>
 
@@ -63,7 +77,6 @@
             </div>
           </div>
         </div>
-        >
       </div>
     </section>
 
@@ -101,7 +114,7 @@
         sections.forEach((section) => {
           const sectionTop = section.offsetTop;
           const sectionHeight = section.clientHeight;
-          if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          if (window.scrollY >= sectionTop - sectionHeight / 2) {
             currentSection = section;
           }
         });
