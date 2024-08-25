@@ -13,7 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
+  
 }
 .avatar {
   margin-top: 70px;
@@ -24,6 +25,7 @@
   align-items: center;
   gap: 10px;
   transition: all 200ms ease;
+  user-select: none;
 
 }
 .social_links:hover {
