@@ -8,7 +8,7 @@
 :root {
   --ultra: #1e201e;
   --super: #3c3d37;
-  --semi: #ff6347;
+  --semi: #10deecc4;
   --light: #ecdfcc;
 }
 a {
@@ -72,20 +72,18 @@ a {
 /* -------------------------------universal------------------------- */
 .main {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 /* ------------------------------------section home 1---------------------- */
 /* ------------------------------------section home 1---------------------- */
 .section_home {
-  background: var(--ultra);
+  background: linear-gradient(#3c3d37,#1e201e);
 }
 .section_about {
   background: var(--super);
 }
 .section_project {
-  background: var(--semi);
+  background: var(--ultra);
 }
 .section_resume {
   background: var(--light);

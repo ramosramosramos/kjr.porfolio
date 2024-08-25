@@ -18,18 +18,20 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <nav  class="navigation">
+    <nav class="navigation">
       <div class="logo">
         <a href="#home"><h1>KJ</h1></a>
       </div>
       <!-- -----------------------MEnu--------------------------------
     -----------------------MEnu-------------------------------- -->
-      <button class="menu" onclick="openMenu()" style="all: unset; cursor: pointer;">
-        <span  class=" menu material-symbols-outlined">
-          menu
-        </span>
+      <button
+        class="menu"
+        onclick="openMenu()"
+        style="all: unset; cursor: pointer"
+      >
+        <span class="menu material-symbols-outlined"> menu </span>
       </button>
-      
+
       <div class="navigation_links">
         <ul>
           <a class="active links" href="#home">Home</a>
@@ -43,48 +45,136 @@
     <!-- ----------------- Sections -------------------------- -->
     <!-- ----------------- Section Home -------------------------- -->
     <section id="home" onclick="closeMenu()" class="main section_home">
-      <div class="home_container">
-        <div class="profile">
-          <img src="image/profile.jpg" alt="" />
+      <!-- -------------------profile------------------------------ -->
+      <!-- -------------------profile------------------------------ -->
+      <div class="my_profile">
+        <img
+          class="avatar"
+          style="width: 250px; height: 250px"
+          src="image/crop_avatar.jpg"
+          alt=""
+        />
+        <h1>Kent Jerone Ramos</h1>
 
-          <div>
-            <h1><strong>Kent Jerone Ramos</strong></h1>
-            <p>Aspiring to be a <strong>Backend Developer</strong></p>
-            <p style="font-size: small">
-              I'm a <strong>Third Year </strong> student in
-              <strong>Acts Computer College</strong> of Santa Cruz ,Laguna
-            </p>
-            <div class="social_links">
-              <a href="https://web.facebook.com/jeronekent/" target="_blank">
-                <img
-                  style="width: 35px; height: 35px"
-                  src="image/facebook.png"
-                  alt="Facebook"
-              /></a>
-              <a href="https://github.com/ramosramosramos" target="_blank">
-                <img
-                  style="width: 35px; height: 35px"
-                  src="image/github.png"
-                  alt="Github"
-              /></a>
-              <a href="https://www.tiktok.com/@kentjerone?" target="_blank">
-                <img
-                  style="width: 35px; height: 35px"
-                  src="image/tiktok1.png
-                    "
-                  alt="Tiktok"
-              /></a>
-            </div>
+        <!-- ----------------social links---------- -->
+        <div class="social_links">
+          <a href="https://web.facebook.com/jeronekent/" target="_blank">
+            <img
+              style="width: 35px; height: 35px; border-radius: 50%"
+              src="image/facebook.png"
+              alt="Facebook"
+          /></a>
+          <a href="https://github.com/ramosramosramos" target="_blank">
+            <img
+              style="width: 35px; height: 35px; border-radius: 50%"
+              src="image/github.png"
+              alt="Github"
+          /></a>
+          <a href="https://www.tiktok.com/@kentjerone?" target="_blank">
+            <img
+              style="width: 35px; height: 35px; border-radius: 50%"
+              src="image/tiktok1.png
+          "
+              alt="Tiktok"
+          /></a>
+        </div>
+      </div>
+      <!-- -------------------End Profile------------------------------ -->
+
+      <!-- ---------------------------details---------------------- -->
+      <!-- ---------------------------details---------------------- -->
+      <div class="details">
+      <div class="aspiring">
+        <p>
+          Aspiring to be a <strong>Web Developer</strong> specializing in
+      <strong>Backend Development</strong>
+        </p>
+        <p style="font-size: small">
+          I'm a <strong>third-year</strong> student at
+          <strong>Acts Computer College</strong> in Santa Cruz, Laguna.
+        </p>
+
+      </div>
+        <!-- -------------------------Language--------------------------  -->
+        <div class="programming_language_container">
+          <h4>Programming Language</h4>
+          <div class="row">
+            <img
+              src="/image/Language/php.png"
+              alt="php language"
+              style="width: 40px; height: 40px"
+              class="programming_language_img"
+            />
+            <img
+              src="/image/Language/javascript.png"
+              alt="php language"
+              style="width: 40px; height: 40px"
+              class="programming_language_img"
+            />
+            <img
+              src="/image/Language/java.svg"
+              alt="php language"
+              style="width: 40px; height: 40px"
+              class="programming_language_img"
+            />
           </div>
+        </div>
+
+        <!-- -------------------------Tools--------------------------  -->
+        <div class="tech_container">
+          <h4>Tech Stack</h4>
+         <div class="row">
+          <img
+          src="/image/Tools/html.png"
+          alt="html"
+          style="width: 40px; height: 40px"
+          class="tech_img"
+        />
+        <img
+          src="/image/Tools/css.png"
+          alt="css"
+          style="width: 40px; height: 40px"
+          class="tech_img"
+        />
+        <img
+          src="/image/Tools/vue.png"
+          alt="vue"
+          style="width: 40px; height: 40px"
+          class="tech_img"
+        />
+        <img
+          src="/image/Tools/inertia.png"
+          alt="inertia"
+          style="width: 40px; height: 40px"
+          class="tech_img"
+        />
+
+        <img
+          src="/image/Tools/laravel_new.png"
+          alt="laravel"
+          style="width: 40px; height: 40px"
+          class="tech_img"
+        />
+        <img
+          src="/image/Tools/tailwind.png"
+          alt="tailwind"
+          style="width: 40px; height: 40px"
+          class="tech_img"
+        />
+         </div>
         </div>
       </div>
     </section>
 
+    <!-- -----------------  Section About -------------------------- -->
     <!-- ----------------- Section About -------------------------- -->
     <!-- ----------------- Section About -------------------------- -->
     <section id="about" onclick="closeMenu()" class="main section_about">
       <h1>About</h1>
     </section>
+
+
+    
     <!-- ----------------- Section Project -------------------------- -->
     <!-- ----------------- Section Project -------------------------- -->
     <section id="project" onclick="closeMenu()" class="main section_project">
@@ -98,5 +188,5 @@
       <h1>Resume</h1>
     </section>
   </body>
-<script src="/Scripts/script.js"></script>
+  <script src="/Scripts/script.js"></script>
 </html>
