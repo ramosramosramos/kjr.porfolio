@@ -1,0 +1,26 @@
+.section_project{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    color: var(--light);
+    }
+    .video_container{
+        width: 90%;
+        margin: auto;
+    }
+/* ------image------------ */
+    .client{
+   display: flex;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 2rem;
+
+    }
+    .client img{
+        margin-top: 10px;
+        border-radius: 50%;
+
+    }
