@@ -30,6 +30,7 @@
   user-select: none;
   filter: saturate(2);
   user-select: none;
+  margin-top: 1rem;
 
 }
 .social_links:hover {
