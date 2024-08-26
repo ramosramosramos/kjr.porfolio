@@ -29,6 +29,7 @@
   transition: all 200ms ease;
   user-select: none;
   filter: saturate(2);
+  user-select: none;
 
 }
 .social_links:hover {
