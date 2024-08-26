@@ -1,0 +1,17 @@
+.section_about{
+display: grid;
+justify-content: center;
+align-items: center;
+grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+
+}
+.about_container{
+    color: var(--super);
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 12px;
+}
+.about_container p{
+text-wrap: wrap;
+}

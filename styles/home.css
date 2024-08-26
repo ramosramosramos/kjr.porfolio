@@ -15,10 +15,12 @@
   align-items: center;
   gap: 20px;
   
+  
 }
 .avatar {
   margin-top: 70px;
   border-radius: 50%;
+  
 }
 .social_links {
   display: flex;
@@ -26,6 +28,7 @@
   gap: 10px;
   transition: all 200ms ease;
   user-select: none;
+  filter: saturate(2);
 
 }
 .social_links:hover {
@@ -45,11 +48,13 @@ strong {
 .programming_language_container{
   margin-top: 1rem;
   display: grid;
+  filter: saturate(2);
 
 }
 .tech_container{
   margin-top: 1rem;
   display: grid;
+  filter: saturate(2);
 }
 .row{
   margin-top: 0.9rem;

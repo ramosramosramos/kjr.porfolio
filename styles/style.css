@@ -77,10 +77,11 @@ a {
 /* ------------------------------------section home 1---------------------- */
 /* ------------------------------------section home 1---------------------- */
 .section_home {
-  background: linear-gradient(#3c3d37,#1e201e);
+ 
+  background: var(--ultra);
 }
 .section_about {
-  background: var(--super);
+  background: var(--light);
 }
 .section_project {
   background: var(--ultra);
