@@ -43,4 +43,20 @@ const navigation_links = document.querySelector('.navigation_links');
     navigation_links.classList.remove('openMenu');
   }
 
- 
+
+
+  
+     // Select all video elements with the class 'hoverVideo'
+     const videos = document.querySelectorAll('.hoverVideo');
+
+     videos.forEach(video => {
+       video.addEventListener('mouseover', () => {
+         video.play();
+       });
+     
+       video.addEventListener('mouseout', () => {
+         video.pause();
+         video.currentTime = 0;
+       });
+     });
+     
